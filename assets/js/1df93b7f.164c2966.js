@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprompt_engineering=self.webpackChunkprompt_engineering||[]).push([[583],{6866:(e,n,r)=>{r.r(n),r.d(n,{default:()=>i});var t=r(6540),p=r(6347),s=r(4848);function i(){const e=(0,p.W6)();return(0,t.useEffect)((()=>{e.push("/prompt-engineering/docs/intro")}),[e]),(0,s.jsx)(s.Fragment,{})}}}]);
