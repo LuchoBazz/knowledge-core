@@ -21,9 +21,6 @@ This command counts the number of lines of code in your Git repository, excludin
 - `grep -v 'svg'`: Further filters out any files that contain the string "svg".
 - `xargs wc -l`: Passes the remaining files to the `wc` command, which counts the number of lines in each file.
 
-### Usage
-Run this command in your terminal to quickly assess the number of lines of code in your repository while ignoring certain file types that may not be relevant.
-
 ## Remove Branches That Have Already Been Pushed
 
 ```bash
@@ -37,8 +34,5 @@ This command removes local branches that have already been deleted from the remo
 - `awk '$2 == "[gone]"`: Filters for branches whose upstream branches are gone (deleted).
 - `sub("refs/heads/", "", $1)`: Removes the `refs/heads/` prefix from the branch names.
 - `git branch -D $branch`: Deletes the local branch.
-
-### Usage
-Use this command to keep your local repository clean by removing branches that are no longer relevant, ensuring that your branch list is up to date with the remote repository.
 
 ---
