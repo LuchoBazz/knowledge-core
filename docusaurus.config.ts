@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Prompt Repository',
+  title: 'My Essential Dev Utils Repo',
   tagline: 'Dinosaurs are cool',
   favicon: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
 
@@ -11,12 +11,12 @@ const config: Config = {
   url: 'https://luchobazz.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/prompt-engineering',
+  baseUrl: '/essential-dev-utils',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'LuchoBazz', // Usually your GitHub org/user name.
-  projectName: 'prompt-engineering', // Usually your repo name.
+  projectName: 'essential-dev-utils', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -76,9 +76,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
     navbar: {
-      title: 'My Prompt Repository',
+      title: 'My Essential Dev Utils Repo',
       logo: {
-        alt: 'My Prompt Repository',
+        alt: 'My Essential Dev Utils Repo',
         src: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
       },
       items: [
@@ -89,7 +89,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/LuchoBazz/prompt-engineering',
+          href: 'https://github.com/LuchoBazz/essential-dev-utils',
           label: 'GitHub',
           position: 'right',
         },

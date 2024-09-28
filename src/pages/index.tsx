@@ -5,7 +5,7 @@ export default function Home(): JSX.Element {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/prompt-engineering/docs/intro');
+    history.push('/essential-dev-utils/docs/intro');
   }, [history]);
 
   return (<></>);
