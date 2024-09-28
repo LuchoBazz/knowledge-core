@@ -38,10 +38,14 @@ This configuration file stores the AWS access keys for different environments. H
 
 To switch between the defined profiles, you can set the `AWS_PROFILE` environment variable. Use the following commands:
 
+#### Staging
 ```shell
 export AWS_PROFILE=default-staging
-export AWS_PROFILE=default-production
 ```
 
+### Production
+```shell
+export AWS_PROFILE=default-production
+```
 ### Explanation
 These commands set the `AWS_PROFILE` variable to specify which set of credentials to use when interacting with AWS services. By changing this variable, you can easily switch between different environments (staging and production) without modifying the credentials file.
