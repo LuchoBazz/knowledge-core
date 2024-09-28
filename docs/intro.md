@@ -7,7 +7,9 @@ sidebar_label: Intro
 
 This repository is dedicated to storing and optimizing code snippets and useful commands that enhance my development workflow. Here, you will find a collection of utilities aimed at streamlining repetitive tasks and improving productivity in various programming environments.
 
-⚠️ **Disclaimer**  
+> **Note:** This documentation is created with the assistance of ChatGPT and similar tools.
+
+## ⚠️ **Disclaimer**  
 This repository is a personal collection and may contain errors. Use the content at your own discretion and responsibility.
 
 ## What is Essential Development Utilities?
