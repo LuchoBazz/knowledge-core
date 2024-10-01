@@ -36,3 +36,23 @@ This command removes local branches that have already been deleted from the remo
 - `git branch -D $branch`: Deletes the local branch.
 
 ---
+
+
+## Undo Last Commit Without Pushing
+
+```bash
+git reset --soft HEAD~1 
+```
+
+### Explanation 
+This command undoes the last commit in your Git repository without removing the changes from the staging area. Here’s a breakdown of the command: 
+- `git reset --soft HEAD~1`: Moves the current branch pointer back by one commit, retaining all changes made in that commit in the staging area. This allows you to make further modifications or commit again without losing any work.
+
+## Undo a Git Add
+```bash
+git reset 
+```
+
+### Explanation 
+This command un-stages all files that were added to the staging area using git add. Here’s a breakdown of the command: 
+- `git reset`: Resets the staging area to match the last commit, effectively removing all files from the staging area while keeping the changes in the working directory. This allows you to modify the files further before staging them again or committing them.
