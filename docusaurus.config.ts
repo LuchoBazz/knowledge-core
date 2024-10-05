@@ -88,8 +88,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/docs/prompts/intro', label: 'Prompts', position: 'left' },
-        { to: '/docs/essential-dev-utils/intro', label: 'Essential Dev Utils', position: 'left' },
+        // { to: '/docs/prompts/intro', label: 'Prompts', position: 'left' },
+        // { to: '/docs/essential-dev-utils/intro', label: 'Essential Dev Utils', position: 'left' },
         {
           href: 'https://github.com/LuchoBazz/essential-dev-utils',
           label: 'GitHub',

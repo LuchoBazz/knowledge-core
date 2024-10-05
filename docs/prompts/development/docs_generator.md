@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Docs Generator Prompts
 sidebar_label: Docs Generator
 ---
@@ -9,7 +9,7 @@ sidebar_label: Docs Generator
 ```text
 I have my documentation in Markdown with the following format:
 
-"FORMAT EXAMPLE HERE"
+"FORMAT_EXAMPLE_HERE"
 
 I would like you to generate documentation in Markdown that follows the same format as the example above. The documentation should be written in formal English suitable for an academic document, business context, or startup environment. Ensure the tone is neutral, professional, polite, and respectful, while maintaining simple, concise, and minimalistic language.
 
