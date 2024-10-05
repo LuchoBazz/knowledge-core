@@ -13,7 +13,7 @@ g++-14 -std=c++17 -Wall -O2 -fno-sanitize-recover -o A A.cpp
 
 **Debug**
 ```bash
-g++-14 -std=c++17 -DDEBUG -Wall -O2 -fno-sanitize-recover A.cpp -o A
+g++-14 -std=c++17 -DDEBUG -Wall -O2 -fno-sanitize-recover -o A A.cpp
 ```
 
 **Running**
