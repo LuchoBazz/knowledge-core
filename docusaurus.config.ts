@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'LuchoBazz', // Usually your GitHub org/user name.
   projectName: 'essential-dev-utils', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -88,6 +88,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        { to: '/docs/prompts/intro', label: 'Prompts', position: 'left' },
+        { to: '/docs/essential-dev-utils/intro', label: 'Essential Dev Utils', position: 'left' },
         {
           href: 'https://github.com/LuchoBazz/essential-dev-utils',
           label: 'GitHub',
