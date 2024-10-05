@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Essential Dev Utils Repo',
+  title: 'My Knowledge Core Repo',
   tagline: 'Dinosaurs are cool',
   favicon: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
 
@@ -11,12 +11,12 @@ const config: Config = {
   url: 'https://luchobazz.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/essential-dev-utils',
+  baseUrl: '/knowledge-core',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'LuchoBazz', // Usually your GitHub org/user name.
-  projectName: 'essential-dev-utils', // Usually your repo name.
+  projectName: 'knowledge-core', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -76,9 +76,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
     navbar: {
-      title: 'My Essential Dev Utils Repo',
+      title: 'My Knowledge Core Repo',
       logo: {
-        alt: 'My Essential Dev Utils Repo',
+        alt: 'My Knowledge Core Repo',
         src: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emoji_u263a.svg',
       },
       items: [
@@ -91,7 +91,7 @@ const config: Config = {
         // { to: '/docs/prompts/intro', label: 'Prompts', position: 'left' },
         // { to: '/docs/essential-dev-utils/intro', label: 'Essential Dev Utils', position: 'left' },
         {
-          href: 'https://github.com/LuchoBazz/essential-dev-utils',
+          href: 'https://github.com/LuchoBazz/knowledge-core',
           label: 'GitHub',
           position: 'right',
         },

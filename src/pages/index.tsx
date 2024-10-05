@@ -5,7 +5,7 @@ export default function Home(): JSX.Element {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/essential-dev-utils/docs/intro');
+    history.push('/knowledge-core/docs/intro');
   }, [history]);
 
   return (<></>);
