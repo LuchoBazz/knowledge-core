@@ -49,3 +49,19 @@ export AWS_PROFILE=default-production
 ```
 ### Explanation
 These commands set the `AWS_PROFILE` variable to specify which set of credentials to use when interacting with AWS services. By changing this variable, you can easily switch between different environments (staging and production) without modifying the credentials file.
+
+
+## Remove Cache to Prevent Conflicts
+
+```shell
+rm -rf .terraform .terraform.lock.hcl
+```
+
+### Explanation
+
+This command removes the Terraform cache and lock file to prevent potential conflicts in your environment. Here’s a breakdown of the command:
+
+- `rm -rf`: A command used to remove files and directories forcefully and recursively.
+- `.terraform`: This directory contains Terraform's cached state files and configurations.
+- `.terraform.lock.hcl`: This file locks the provider versions and configurations for the Terraform project.
+Removing these files may help resolve issues related to outdated or conflicting state information.
