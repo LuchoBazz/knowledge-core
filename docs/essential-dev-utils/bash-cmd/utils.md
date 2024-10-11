@@ -19,3 +19,18 @@ This command executes a specific test script in your project multiple times in s
 
 
 This approach can be applied when conducting repetitive tests for reliability purposes or to observe any fluctuations in performance across multiple runs.
+
+## Run Build and Audit User Imports
+
+```bash
+npm run users users.txt | tee audit_import_users_$(date +'%Y%m%d%H%M%S').txt
+```
+
+### Explanation
+This command runs two tasks sequentially in a Node.js environment: building the project and processing user imports. It then captures the output of the user import process into a timestamped file for auditing purposes. Below is a detailed breakdown of the command:
+
+- `npm run users users.txt`: Runs the `users` script, passing `users.txt` as an argument. This script likely handles the import or processing of users from the provided file.
+- `| tee`: Pipes the output of the `users` command and writes it both to the console and to the specified file.
+- `audit_import_users_$(date +'%Y%m%d%H%M%S').txt`: Creates a log file named with a timestamp (in the format `YYYYMMDDHHMMSS`), storing the output for later review or auditing. The `date` command dynamically generates the timestamp to ensure each audit file has a unique name.
+
+This approach ensures that user imports are tracked and verifiable, which is critical for auditing and troubleshooting in production environments.
