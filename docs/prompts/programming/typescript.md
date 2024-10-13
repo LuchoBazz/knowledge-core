@@ -9,7 +9,7 @@ sidebar_label: Typescript
 ```ts title="prompt"
 I have the following TypeScript code:
 
-{CODE_HERE}
+"CODE_HERE"
 
 Can you provide me with a set of Jest tests using `describe.each` that robustly test the code with various edge cases?
 
@@ -52,6 +52,42 @@ Please review the code and suggest improvements based on clean code principles.
 The focus should be on readability, maintainability, minimalism and efficiency.
 Here is the code:
 
-{CODE_HERE}
+"CODE_HERE"
 ```
 
+*Prompt for asking for unit tests to be added to a specific code snippet.*
+
+```ts title="prompt"
+Could you please add unit tests for the following code snippet in Jest with Typescript?
+
+"CODE_HERE"
+
+Additionally, please integrate these new tests with the existing ones, ensuring that they maintain consistency in formatting and style with the current test suite. The existing tests are as follows:
+
+"TESTS_HERE"
+
+Thank you for your assistance!
+```
+
+*Prompt for asking for unit tests to be added to a specific code snippet.*
+
+```ts title="prompt"
+Could you please add unit tests for the following code snippet in Jest with Typescript?
+
+"CODE_HERE"
+
+Additionally, please integrate these new tests with the existing ones, ensuring that they maintain consistency in formatting and style with the current test suite. The existing tests are as follows:
+
+"TESTS_HERE"
+
+Thank you for your assistance!
+```
+
+*Prompt for asking for a cURL command to be generated, which is a command-line tool used for making HTTP requests.*
+```ts title="prompt"
+Could you generate a cURL command for me, considering the fields in the body, parameters, and query strings from the following code?
+
+"CODE"
+
+Please ensure that the cURL request correctly reflects the structure and data included in the body, URL parameters, and query strings as presented in the code
+```
