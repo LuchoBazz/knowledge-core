@@ -53,3 +53,21 @@ This query retrieves log entries containing the term 'unhandledRejection'. The b
 - `sort @timestamp desc`: Sorts the results by timestamp in descending order.
 
 - `limit 10000`: Limits the number of returned entries to 10,000.
+
+
+## Count Messages and Calculate Size
+
+```sql
+fields @message
+| stats count (*) as total, sum(strlen(@message))/1024/1024 as size by label, level, message
+| sort by size desc
+```
+
+### Explanation
+This query counts the total number of messages and calculates their size, grouped by specific labels, levels, and messages. The following components detail the query's functionality:
+
+- `fields @message`: Specifies the field to analyze, which in this case is the message content.
+- `stats count (*) as total`: Computes the total count of messages and labels it as `total`.
+- `sum(strlen(@message))/1024/1024 as size`: Calculates the total size of messages in megabytes by summing the length of each message and converting the result from bytes to megabytes.
+- `by label, level, message`: Groups the results based on the specified fields: `label`, `level`, and `message`.
+- `sort by size desc`: Orders the output by message size in descending order, allowing for easy identification of the largest messages.
