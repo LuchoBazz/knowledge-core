@@ -49,6 +49,7 @@ This command undoes the last commit in your Git repository without removing the 
 - `git reset --soft HEAD~1`: Moves the current branch pointer back by one commit, retaining all changes made in that commit in the staging area. This allows you to make further modifications or commit again without losing any work.
 
 ## Undo a Git Add
+
 ```bash
 git reset 
 ```
@@ -56,3 +57,16 @@ git reset
 ### Explanation 
 This command un-stages all files that were added to the staging area using git add. Here’s a breakdown of the command: 
 - `git reset`: Resets the staging area to match the last commit, effectively removing all files from the staging area while keeping the changes in the working directory. This allows you to modify the files further before staging them again or committing them.
+
+## Amending the Last Git Commit Message
+
+```bash
+git commit --amend -m "SOME_COMMENT"
+```
+
+### Explanation
+This command modifies the most recent commit in your Git repository by changing its commit message. Here’s a breakdown of the command:
+- `git commit --amend`: This option allows you to modify the last commit. It can be used to edit the commit message or to add changes to the commit.
+- `-m "some comment"`: This flag specifies the new commit message. Replace `"some comment"` with your desired message to reflect the changes made.
+
+Using this command is particularly useful for correcting typos or adding additional information to the commit message without creating a new commit.
