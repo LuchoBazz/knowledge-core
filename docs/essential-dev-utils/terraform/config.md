@@ -65,3 +65,16 @@ This command removes the Terraform cache and lock file to prevent potential conf
 - `.terraform`: This directory contains Terraform's cached state files and configurations.
 - `.terraform.lock.hcl`: This file locks the provider versions and configurations for the Terraform project.
 Removing these files may help resolve issues related to outdated or conflicting state information.
+
+## Initialize and Plan Terraform Configuration
+
+```shell
+terraform init && terraform plan
+```
+
+### Explanation
+This command performs two essential steps in managing infrastructure with Terraform: initializing the working directory and generating an execution plan. Here's a breakdown of the command:
+- `terraform init`: Prepares the working directory by downloading and installing any necessary provider plugins and setting up the backend for state management.
+- `terraform plan`: Generates an execution plan that shows what actions Terraform will take to apply the current configuration, without making any changes to your infrastructure.
+
+This sequence ensures that the Terraform environment is correctly configured and provides an overview of the potential modifications before execution.
