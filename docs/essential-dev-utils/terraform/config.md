@@ -78,3 +78,15 @@ This command performs two essential steps in managing infrastructure with Terraf
 - `terraform plan`: Generates an execution plan that shows what actions Terraform will take to apply the current configuration, without making any changes to your infrastructure.
 
 This sequence ensures that the Terraform environment is correctly configured and provides an overview of the potential modifications before execution.
+
+## Applying Terraform Configuration
+
+```shell
+terraform apply
+```
+
+### Explanation
+This command applies the Terraform configuration by creating or updating infrastructure based on the configuration files. Below is a breakdown of the command:
+- terraform apply: Executes the actions specified in the Terraform configuration files. This command will prompt for approval before making any changes unless the -auto-approve flag is used.
+- Before running this command, ensure the Terraform configuration has been initialized with terraform init.
+- The command generates a plan, detailing the resources to be added, modified, or destroyed, allowing for a careful review before proceeding with the changes.
