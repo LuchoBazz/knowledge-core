@@ -90,3 +90,30 @@ This command applies the Terraform configuration by creating or updating infrast
 - terraform apply: Executes the actions specified in the Terraform configuration files. This command will prompt for approval before making any changes unless the -auto-approve flag is used.
 - Before running this command, ensure the Terraform configuration has been initialized with terraform init.
 - The command generates a plan, detailing the resources to be added, modified, or destroyed, allowing for a careful review before proceeding with the changes.
+
+## Delete All `.terraform` Directories Recursively
+
+```shell
+find . -name ".terraform" -type d -exec rm -rf {} +
+```
+
+### Explanation
+This command recursively deletes all directories named `.terraform` from the current directory and its subdirectories. Here’s a breakdown of the command:
+- `find .`: Searches the current directory and all its subdirectories.
+- `-name ".terraform"`: Specifies that only directories with the name `.terraform` will be targeted.
+- `-type d`: Ensures that only directories are included in the search.
+- `-exec rm -rf {} +`: Executes the `rm -rf` command to remove the found directories recursively. The `{}` is replaced by the directory paths found by the `find` command.
+
+
+## Delete All `.terraform.lock.hcl` Files Recursively
+
+```shell
+find . -name ".terraform.lock.hcl" -type f -exec rm -f {} +
+```
+
+### Explanation
+This command recursively deletes all `.terraform.lock.hcl` files from the current directory and its subdirectories. Here’s a breakdown of the command:
+- `find .`: Searches the current directory and all its subdirectories.
+- `-name ".terraform.lock.hcl"`: Specifies that only files named `.terraform.lock.hcl` will be targeted.
+- `-type f`: Ensures that only files are included in the search.
+- `-exec rm -f {} +`: Executes the `rm -f` command to forcefully remove the found files. The `{}` is replaced by the file paths found by the `find` command.
