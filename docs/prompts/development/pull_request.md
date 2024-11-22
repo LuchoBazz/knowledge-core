@@ -35,4 +35,16 @@ Example for context:
 [CONTEXT] = CONTEXT_HERE
 ```
 
+*Generate clear, concise GitHub branch names following the specified format and project’s naming conventions.*
+
+```ts title="prompt"
+I need you to generate [NUMBER_OF_BRANCH_NAMES] possible GitHub branch names, following the naming convention of [TYPE_OF_CHANGE]/[DESCRIPTIVE_NAME], ensuring the names are clear, concise, and aligned with the project’s standards. The branch names should be easy to understand, related to the specific task, and follow the structure used by the team.
+
+[NUMBER_OF_BRANCH_NAMES] = 10
+[TYPE_OF_CHANGE] = FEATURE | BUG FIX | REFACTOR | DOCUMENTATION UPDATE | HOTFIX | CHORE
+[NAMING_CONVENTION] = feat | fix | refactor | docs | hotfix | chore
+[CONTEXT] = CONTEXT_HERE
+
+Please generate branch names that respect this format and are consistent with the project’s naming conventions.
+```
 ---
