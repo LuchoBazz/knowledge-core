@@ -14,7 +14,9 @@ This section contains prompts designed for translating text into formal Spanish.
 
 ```text title="prompt"
 Can you translate this text into formal Spanish for me?
-"TEXT_HERE"
+"[TEXT]"
+
+[TEXT] = TEXT_HERE
 ```
 
 ---
@@ -24,7 +26,9 @@ Can you translate this text into formal Spanish for me?
 ```text title="prompt"
 Could you please translate the following text into formal Spanish suitable for an academic document, business context, or startup environment? Ensure the tone is neutral, professional, polite, and respectful, while keeping the language simple, concise, and minimalistic.
 
-"TEXT_HERE"
+"[TEXT]"
+
+[TEXT] = TEXT_HERE
 ```
 
 ---

@@ -9,7 +9,7 @@ sidebar_label: Typescript
 ```ts title="prompt"
 I have the following TypeScript code:
 
-"CODE_HERE"
+[CODE]
 
 Can you provide me with a set of Jest tests using `describe.each` that robustly test the code with various edge cases?
 
@@ -39,6 +39,8 @@ describe.each([
     });
   }
 );
+
+[CODE] = CODE_HERE
 ```
 
 

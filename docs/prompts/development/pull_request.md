@@ -11,9 +11,11 @@ Can you provide me with a title and description in formal English for my GitHub 
 
 I will provide you with the description in Spanish.
 
-"HERE_TEXT"
+"[TEXT]"
 
 Please also include some additional details.
+
+[TEXT] = HERE_TEXT
 ```
 
 ---
