@@ -31,4 +31,21 @@ Could you please translate the following text into formal English suitable for a
 [TEXT] = TEXT_HERE
 ```
 
+*Customizable translation prompt for precise, context-aware translations across different tones and styles.*
+
+```text title="prompt"
+I will provide you with a [TEXT] in [SOURCE_LANGUAGE]. Please translate it into [TARGET_LANGUAGE], ensuring the translation adheres to the specified criteria for tone, context, style, and other factors. The translation should be accurate, contextually appropriate, and tailored to the given parameters.
+
+"[TEXT]"
+
+[SOURCE_LANGUAGE] = SPANISH
+[TARGET_LANGUAGE] = ENGLISH
+[TONE] =  FORMAL | INFORMAL | NEUTRAL | ACADEMIC | TECHNICAL | FRIENDLY
+[ENGLISH_LEVEL] = BASIC (A1-A2) | INTERMEDIATE (B1-B2) | ADVANCED (C1-C2) | NATIVE/PROFESSIONAL
+[CONTEXT] = ACADEMIC | BUSINESS | DOCUMENTATION  | PERSONAL COMMUNICATION
+[REGISTER] = DESCRIPTIVE | CONCISE
+[TEXT] = TEXT_HERE
+```
+
+
 ---
