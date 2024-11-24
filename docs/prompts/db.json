@@ -1,0 +1,223 @@
+[
+  {
+    "title": "Generate Jest tests for TypeScript using describe.each",
+    "description": "Generate Jest tests using describe.each to test TypeScript code with edge cases",
+    "prompt": "I have the following TypeScript code:\n\n[CODE]\n\nCan you provide me with a set of Jest tests using `describe.each` that robustly test the code with various edge cases?\n\nThe tests should have a structure similar to this:\n\ndescribe.each([\n  {\n    description: \"should ...\",\n    ..., \n    expected: ...,\n  },\n  {\n    description: \"should ...\",\n    ..., \n    expected: ...,\n  },\n])(\"given ...\",\n  ({ description, ..., expected }: { description: string; ...; expected: ...; }) => {\n\n    beforeEach(() => {\n      ....\n    });\n\n    it(description, () => {\n      const result = function(...);\n      expect(result).toEqual(expected);\n    });\n  }\n);\n\n[CODE] = CODE_HERE",
+    "tags": [
+      "testing",
+      "jest",
+      "typescript",
+      "edge cases"
+    ]
+  },
+  {
+    "title": "Formal English Translation - BASIC",
+    "description": "Translate text into formal English",
+    "prompt": "Can you translate this text into formal English for me?\n\"[TEXT]\"\n\n[TEXT] = TEXT_HERE",
+    "tags": [
+      "translation",
+      "formal",
+      "english"
+    ]
+  },
+  {
+    "title": "Translate to Formal/Academic/Business English - MEDIUM",
+    "description": "Translate text into formal, academic, or business English",
+    "prompt": "Could you please translate the following text into formal English suitable for an academic document, business context, or startup environment? Ensure the tone is neutral, professional, polite, and respectful, while keeping the language simple, concise, and minimalistic.\n\n\"[TEXT] = TEXT_HERE\"",
+    "tags": [
+      "translation",
+      "formal",
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "title": "Translation with Tone and Context - ADVANCED",
+    "description": "Translate text from one language to another with specific tone and context",
+    "prompt": "I will provide you with a [TEXT] in [SOURCE_LANGUAGE]. Please translate it into [TARGET_LANGUAGE], ensuring the translation adheres to the specified criteria for tone, context, style, and other factors. The translation should be accurate, contextually appropriate, and tailored to the given parameters.\n\n\"[TEXT]\"\n\n[SOURCE_LANGUAGE] = SPANISH\n[TARGET_LANGUAGE] = ENGLISH\n[TONE] = FORMAL | INFORMAL | NEUTRAL | ACADEMIC | TECHNICAL | FRIENDLY\n[ENGLISH_LEVEL] = BASIC (A1-A2) | INTERMEDIATE (B1-B2) | ADVANCED (C1-C2) | NATIVE/PROFESSIONAL\n[CONTEXT] = ACADEMIC | BUSINESS | DOCUMENTATION | PERSONAL COMMUNICATION\n[REGISTER] = DESCRIPTIVE | CONCISE\n\n[TEXT] = TEXT_HERE",
+    "tags": [
+      "translation",
+      "tone",
+      "context",
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "title": "Convert a Prompt into JSON Structure - TEMPORAL",
+    "description": "This prompt instructs you to convert a given prompt into a specific JSON format. The JSON should include a title summarizing the prompt, a brief description, the prompt text itself, and relevant tags to categorize the prompt. The goal is to make the prompt easily understandable and well-organized.",
+    "prompt": "Please convert the following prompt into the following JSON structure:\n\n\"[PROMPT]\"\n\n{\n    \"title\": \"...\",\n    \"description\": \"...\",\n    \"prompt\": \"...\",\n    \"tags\": [...]\n}\n\nInstructions for each field:\n\n- Title: Extract the main idea of the prompt and summarize it in less than 15 words.\n- Description: Write a 50-word description of what the prompt is about, providing a concise overview.\n- Prompt: Decode the given prompt, removing any special characters or encoded elements, and ensure it is in a clear and readable format.\n- Tags: Select a few relevant tags (e.g., \"translation\", \"typescript\", \"testing\") that help identify the key topics of the prompt.\n\n[PROMPT] = PROMPT_HERE",
+    "tags": [
+      "json",
+      "prompt conversion",
+      "structure",
+      "tags",
+      "instructions"
+    ]
+  },
+  {
+    "title": "Generate a context-based email in [LANGUAGE]",
+    "description": "This prompt helps generate an email in the specified language, considering the context, tone, and structure. The generated email will be tailored to the recipient and the purpose, whether formal, informal, academic, marketing, or for conflict resolution. It ensures that the tone and emotion are appropriate for the situation.",
+    "prompt": "I will provide you with the necessary details to create an email in [LANGUAGE], considering the specified context, tone, and structure. Ensure the email is clear, well-structured, and appropriate for the target audience.\n\n[LANGUAGE] = SPANISH | ENGLISH\n[PURPOSE] = FORMAL | INFORMAL | ACADEMIC | MARKETING | RESOLUTION OF CONFLICTS\n[TONE] = RESPECTFUL AND FORMAL | FRIENDLY BUT PROFESSIONAL | CASUAL AND INFORMAL\n[EMOTION] = NEUTRAL | MOTIVATIONAL | EMPATHETIC | URGENT\n[URGENCY] = NORMAL | MODERATE | HIGH\n[RECIPIENT] = RECIPIENTE_HERE\n[CONTEXT] = CONTEXT_HERE\n\nDetails:\n[PURPOSE], [TONE], [RECIPIENT], and other variables will guide the generated email's structure and content.",
+    "tags": [
+      "email",
+      "writing",
+      "language",
+      "context",
+      "tone",
+      "communication"
+    ]
+  },
+  {
+    "title": "Generate formal Markdown documentation from an example format",
+    "description": "This prompt helps generate Markdown documentation based on a provided example format. The generated documentation should be written in formal English, suitable for academic, business, or startup environments. The tone should be neutral, professional, polite, and respectful while maintaining clear, concise, and minimalistic language.",
+    "prompt": "I have my documentation in Markdown with the following format:\n\n\"[FORMAT]\"\n\nI would like you to generate documentation in Markdown that follows the same format as the example above. The documentation should be written in formal English suitable for an academic document, business context, or startup environment. Ensure the tone is neutral, professional, polite, and respectful, while maintaining simple, concise, and minimalistic language.\n\n\"[CODE]\"\n\nPlease provide all the Markdown content enclosed within triple backticks, ensuring that all inner instances of triple backticks are removed.\n\n[FORMAT] = FORMAT_EXAMPLE_HERE\n[CODE] = CODE_HERE",
+    "tags": [
+      "documentation",
+      "markdown",
+      "writing",
+      "format",
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "title": "Generate Jira task TITLE and DESCRIPTION based on criteria",
+    "description": "This prompt helps generate a Jira task title and description in English based on specific criteria such as task type, scope, and context. The generated task should adhere to the provided task type (e.g., Feature, Bug Fix) and scope (e.g., Back-End, Front-End) with contextually appropriate content.",
+    "prompt": "I need you to generate a Jira task title and description in [LANGUAGE], considering the following criteria:\n\n[LANGUAGE] = ENGLISH\n[TASK_TYPE] = FEATURE | BUG FIX | REFACTOR | DOCUMENTATION UPDATE | IMPROVEMENT\n[SCOPE] = BACK-END | DATABASE | INFRASTRUCTURE | UI/UX | FRONT-END | FULL-STACK\n[CONTEXT] = CONTEXT_HERE\n\nPlease use the following options to guide the task generation.",
+    "tags": [
+      "jira",
+      "task",
+      "generation",
+      "software development",
+      "documentation"
+    ]
+  },
+  {
+    "title": "Generate Jira task TITLES based on parameters",
+    "description": "This prompt helps generate a specified number of Jira task titles in English, considering various criteria like task type, scope, and context. The generated titles are clear, concise, and tailored to fit the given parameters, ensuring relevance to the assigned task type and scope.",
+    "prompt": "I need you to generate [NUMBER_OF_TITLES] Jira task titles in [LANGUAGE], considering the following criteria:\n\n[LANGUAGE] = ENGLISH\n[TASK_TYPE] = FEATURE | BUG FIX | REFACTOR | DOCUMENTATION UPDATE | IMPROVEMENT\n[SCOPE] = BACK-END | DATABASE | INFRASTRUCTURE | UI/UX | FRONT-END | FULL-STACK\n[CONTEXT] = CONTEXT_HERE\n\nPlease generate [NUMBER_OF_TITLES] clear and concise task titles based on these parameters.",
+    "tags": [
+      "jira",
+      "task titles",
+      "software development",
+      "task generation",
+      "project management"
+    ]
+  },
+  {
+    "title": "Generate formal TITLE and DESCRIPTION for GitHub Pull Request",
+    "description": "This prompt helps generate a formal title and description for a GitHub Pull Request. It asks for a concise summary and includes specific details provided by the user, allowing for a clear and formal presentation of the changes being proposed in the Pull Request.",
+    "prompt": "Can you provide me with a title and description in formal English for my GitHub Pull Request that does the following:\n\nI will provide you with the description in Spanish.\n\n\"[TEXT]\"\n\nPlease also include some additional details.\n\n[TEXT] = HERE_TEXT",
+    "tags": [
+      "github",
+      "pull request",
+      "title",
+      "description",
+      "formal english"
+    ]
+  },
+  {
+    "title": "Generate concise TITLES for GitHub Pull Requests",
+    "description": "This prompt helps generate multiple possible titles for a GitHub Pull Request. The titles should be clear, concise, and descriptive of the changes made, based on project conventions. It allows users to provide context and change types to tailor the generated titles to the Pull Request's purpose and scope.",
+    "prompt": "I need you to generate [NUMBER_OF_TITLES] possible titles in English for my GitHub Pull Request. The titles should be clear, concise, and descriptive of the changes made in the Pull Request, considering the following criteria:\n\nEnsure the titles reflect the change in a way that is aligned with the project's style and naming conventions.\n\nExample for context: \n\n\"[CONTEXT]\"\n\n[NUMBER_OF_TITLES] = 10\n[TYPE_OF_CHANGE] = FEATURE | BUG FIX | REFACTOR | DOCUMENTATION UPDATE\n[PURPOSE] = IMPROVE_PERFORMANCE | FIX_ISSUE | UPDATE_FUNCTIONALITY\n[CONTEXT] = CONTEXT_HERE",
+    "tags": [
+      "github",
+      "pull request",
+      "titles",
+      "concise",
+      "naming conventions"
+    ]
+  },
+  {
+    "title": "Generate GitHub BRANCH names following project conventions",
+    "description": "This prompt helps generate multiple GitHub branch names that follow a specific naming convention. The names should be clear, concise, and aligned with the project's standards, ensuring they are easy to understand and related to the task at hand. It uses the format [TYPE_OF_CHANGE]/[DESCRIPTIVE_NAME].",
+    "prompt": "I need you to generate [NUMBER_OF_BRANCH_NAMES] possible GitHub branch names, following the naming convention of [TYPE_OF_CHANGE]/[DESCRIPTIVE_NAME], ensuring the names are clear, concise, and aligned with the project’s standards. The branch names should be easy to understand, related to the specific task, and follow the structure used by the team.\n\n[NUMBER_OF_BRANCH_NAMES] = 10\n[TYPE_OF_CHANGE] = FEATURE | BUG FIX | REFACTOR | DOCUMENTATION UPDATE | HOTFIX | CHORE\n[NAMING_CONVENTION] = feat | fix | refactor | docs | hotfix | chore\n[CONTEXT] = CONTEXT_HERE\n\nPlease generate branch names that respect this format and are consistent with the project’s naming conventions.",
+    "tags": [
+      "github",
+      "branch names",
+      "naming convention",
+      "feature",
+      "bug fix"
+    ]
+  },
+  {
+    "title": "Translate text into formal Spanish - MEDIUM",
+    "description": "This prompt asks for a translation of a given text into formal Spanish. The translation should ensure the tone is professional and respectful, maintaining accuracy and clarity. It is important to adapt the language appropriately to formal contexts while preserving the original meaning of the text.",
+    "prompt": "Can you translate this text into formal Spanish for me?\n\n[TEXT] = TEXT_HERE",
+    "tags": [
+      "translation",
+      "Spanish",
+      "formal language"
+    ]
+  },
+  {
+    "title": "Translate text into formal Spanish for professional contexts - ADVANCED",
+    "description": "This prompt requests a translation of a given text into formal Spanish suitable for academic, business, or startup environments. The translation should maintain a neutral, professional tone while being polite and concise. The language should remain simple, clear, and minimalistic, fitting the requirements of formal communication.",
+    "prompt": "Could you please translate the following text into formal Spanish suitable for an academic document, business context, or startup environment? Ensure the tone is neutral, professional, polite, and respectful, while keeping the language simple, concise, and minimalistic.\n\n[TEXT] = TEXT_HERE",
+    "tags": [
+      "translation",
+      "Spanish",
+      "formal language",
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "title": "Generate questions based on a document's content",
+    "description": "This prompt asks for the generation of a specified number of questions based on a provided document. The questions should focus on key concepts and ideas from the document, avoiding trivial points. The questions will be at a specific level of difficulty and in a particular format, with answers provided.",
+    "prompt": "I will provide you with a [TEXT_TYPE] document. Please analyze its content and generate [NUMBER_OF_QUESTIONS] questions at a [LEVEL] level in the [FORMAT] format, along with their correct answers. The questions should comprehensively cover the key points of the text, ensuring they are clear and focused on essential concepts to facilitate effective learning. Avoid trivial questions and prioritize the main ideas.\n\n[TEXT]\n\nCould you provide me with the answer in [RESPONSE_LANGUAGE]?\n\n[TEXT_TYPE] = TECHNICAL | ACADEMIC | HISTORICAL\n[LEVEL] = BASIC | INTERMEDIATE | ADVANCED\n[FORMAT] = OPEN-ENDED | TRUE/FALSE | MULTIPLE CHOICE | ALL OPEN-ENDED\n[RESPONSE_LANGUAGE] = SPANISH | ENGLISH\n[TEXT] = TEXT_HERE",
+    "tags": [
+      "education",
+      "learning",
+      "questions",
+      "content analysis",
+      "study"
+    ]
+  },
+  {
+    "title": "Improve TypeScript code using clean code principles",
+    "description": "This prompt requests a review and improvement of TypeScript code by applying clean code practices. The focus should be on enhancing readability, maintainability, minimalism, and efficiency. The aim is to improve the code quality while ensuring it remains easy to understand and maintain.",
+    "prompt": "I would like to improve the following TypeScript code by applying clean code practices. Please review the code and suggest improvements based on clean code principles. The focus should be on readability, maintainability, minimalism, and efficiency. Here is the code:\n\n[CODE] = CODE_HERE",
+    "tags": [
+      "typescript",
+      "clean code",
+      "code review",
+      "readability",
+      "maintainability"
+    ]
+  },
+  {
+    "title": "Add Unit Tests in Jest with TypeScript and Integrate with Existing Test Suite",
+    "description": "This prompt asks to add unit tests for a given code snippet using Jest and TypeScript. It also includes integrating these tests with the existing ones to ensure consistency in formatting and style with the current test suite.",
+    "prompt": "Could you please add unit tests for the following code snippet in Jest with TypeScript?\n\n[CODE]\n\nAdditionally, please integrate these new tests with the existing ones, ensuring that they maintain consistency in formatting and style with the current test suite. The existing tests are as follows:\n\n[TESTS_HERE]",
+    "tags": [
+      "typescript",
+      "jest",
+      "unit testing",
+      "test suite"
+    ]
+  },
+  {
+    "title": "Add Jest unit tests to TypeScript code and integrate with existing tests",
+    "description": "This prompt asks for the creation of Jest unit tests for a provided TypeScript code snippet. It also requests integration of these new tests with existing ones, ensuring consistency in formatting and style with the current test suite. The user provides both the code and current tests to work with.",
+    "prompt": "Could you please add unit tests for the following code snippet in Jest with Typescript? \"[CODE_HERE]\" Additionally, please integrate these new tests with the existing ones, ensuring that they maintain consistency in formatting and style with the current test suite. The existing tests are as follows: \"[TESTS_HERE]\" Thank you for your assistance!",
+    "tags": [
+      "typescript",
+      "jest",
+      "unit testing",
+      "testing"
+    ]
+  },
+  {
+    "title": "Generate cURL command from code with body, parameters, and query strings",
+    "description": "This prompt requests the generation of a cURL command from a given code snippet. The cURL request should correctly reflect the structure and data in the body, URL parameters, and query strings as presented in the code. The goal is to ensure accuracy in reflecting the code's data in the cURL format.",
+    "prompt": "Could you generate a cURL command for me, considering the fields in the body, parameters, and query strings from the following code? \"[CODE_HERE]\" Please ensure that the cURL request correctly reflects the structure and data included in the body, URL parameters, and query strings as presented in the code.",
+    "tags": [
+      "curl",
+      "http",
+      "api",
+      "command generation"
+    ]
+  }
+]
