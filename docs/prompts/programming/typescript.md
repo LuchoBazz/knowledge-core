@@ -54,7 +54,7 @@ Please review the code and suggest improvements based on clean code principles.
 The focus should be on readability, maintainability, minimalism and efficiency.
 Here is the code:
 
-"CODE_HERE"
+[CODE] = CODE_HERE
 ```
 
 *Prompt for asking for unit tests to be added to a specific code snippet.*
@@ -89,7 +89,7 @@ Thank you for your assistance!
 ```ts title="prompt"
 Could you generate a cURL command for me, considering the fields in the body, parameters, and query strings from the following code?
 
-"CODE"
+"CODE_HERE"
 
 Please ensure that the cURL request correctly reflects the structure and data included in the body, URL parameters, and query strings as presented in the code
 ```
