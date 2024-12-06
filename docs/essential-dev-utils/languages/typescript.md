@@ -38,3 +38,39 @@ This code snippet demonstrates how to use Jest's spy functions to mock and resto
 
 ### Benefits
 Using this approach ensures isolation between tests and prevents unintended interactions with the original implementation of `someMethod`. It is particularly useful for testing code that depends on specific configurations or behaviors provided by the mocked method.
+
+## Logs When a Node.js Instance Crashes
+
+To track the logs when a Node.js instance encounters a crash, consider monitoring the following types of errors:
+
+- **JavaScript heap out of memory**
+- **uncaughtException**
+- **unhandledRejection**
+
+### Explanation
+These logs indicate potential issues with the Node.js instance that may lead to application crashes or unexpected behavior. Here’s an overview of each type of error:
+- **JavaScript heap out of memory**: This error occurs when the application exceeds the available memory heap, causing it to crash.
+- **uncaughtException**: This error occurs when an unhandled exception is thrown in the Node.js process, which can lead to the termination of the process.
+- **unhandledRejection**: This error happens when a promise rejection is not properly handled, potentially leading to application instability.
+
+### Example
+To handle these errors and ensure the application continues running smoothly, you can add appropriate event listeners in your Node.js application:
+
+```javascript
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception:', err);
+  // Handle the exception appropriately
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled rejection:', reason);
+  // Handle the rejection appropriately
+});
+
+process.on('SIGUSR2', () => {
+  console.log('JavaScript heap out of memory detected.');
+  // Handle memory-related errors appropriately
+});
+```
+
+These handlers allow you to log, manage, and respond to errors, improving the reliability of your Node.js application.
