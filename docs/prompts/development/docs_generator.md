@@ -22,3 +22,27 @@ Please provide all the Markdown content enclosed within triple backticks, ensuri
 ```
 
 ---
+
+*This prompt outlines guidelines for handling creative content by providing summaries or analyses instead of verbatim reproductions, and linking to sources for further information.*
+
+```text
+Please convert the following prompt into the following JSON structure:
+
+"[PROMPT]"
+
+{
+    "title": "...",
+    "description": "...",
+    "prompt": "...",
+    "tags": [...]
+}
+
+Instructions for each field:
+
+- Title: Extract the main idea of the prompt and summarize it in less than 15 words.
+- Description: Write a 50-word description of what the prompt is about, providing a concise overview.
+- Prompt: Decode the given prompt, removing any special characters or encoded elements, and ensure it is in a clear and readable format.
+- Tags: Select a few relevant tags (e.g., "translation", "typescript", "testing") that help identify the key topics of the prompt.
+
+[PROMPT] = PROMPT_HERE
+```
