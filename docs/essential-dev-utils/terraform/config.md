@@ -15,22 +15,22 @@ File: `~/.aws/credentials`
 Command: `aws configure`
 
 ```toml
-[default-staging]
+[staging]
 aws_access_key_id = KEY-STAGING
 aws_secret_access_key = SECRET-AWS
 
-[default-production]
+[production]
 aws_access_key_id = KEY-PRODUCTION
 aws_secret_access_key = SECRET-AWS
 ```
 
 ### Explanation
 This configuration file stores the AWS access keys for different environments. Here’s a breakdown of the sections:
-- `[default-staging]`: Defines the credentials for the staging environment.
+- `[staging]`: Defines the credentials for the staging environment.
   - `aws_access_key_id`: The access key ID for the staging environment.
   - `aws_secret_access_key`: The secret access key for the staging environment.
   
-- `[default-production]`: Defines the credentials for the production environment.
+- `[production]`: Defines the credentials for the production environment.
   - `aws_access_key_id`: The access key ID for the production environment.
   - `aws_secret_access_key`: The secret access key for the production environment.
 
@@ -40,12 +40,12 @@ To switch between the defined profiles, you can set the `AWS_PROFILE` environmen
 
 #### Staging
 ```shell
-export AWS_PROFILE=default-staging
+export AWS_PROFILE=staging
 ```
 
 ### Production
 ```shell
-export AWS_PROFILE=default-production
+export AWS_PROFILE=production
 ```
 ### Explanation
 These commands set the `AWS_PROFILE` variable to specify which set of credentials to use when interacting with AWS services. By changing this variable, you can easily switch between different environments (staging and production) without modifying the credentials file.
