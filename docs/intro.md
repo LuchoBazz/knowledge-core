@@ -24,7 +24,7 @@ This repository is a personal collection of knowledge and may contain inaccuraci
 
 ## Related repositories
 
-- [cpp-algorithm-snippets](https://github.com/LuchoBazz/cpp-algorithm-snippets)
+- [cpp-algorithm-snippets](https://luchobazz.github.io/cpp-algorithm-snippets/docs/intro)
    Repository with useful snippets for competitive programming
 
 ## Contributions
