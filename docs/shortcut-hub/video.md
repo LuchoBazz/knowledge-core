@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 title: Video
 sidebar_label: Video
 ---
