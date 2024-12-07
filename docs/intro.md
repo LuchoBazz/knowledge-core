@@ -22,6 +22,11 @@ This repository is a personal collection of knowledge and may contain inaccuraci
 - **Essential Commands**: A compilation of commands for various development environments, enabling automation and streamlined workflows.
 - **Best Practices**: Guidelines and tips on writing effective code and utilizing development tools to their fullest potential.
 
+## Related repositories
+
+- [cpp-algorithm-snippets](https://github.com/LuchoBazz/cpp-algorithm-snippets)
+   Repository with useful snippets for competitive programming
+
 ## Contributions
 Contributions from fellow developers are highly encouraged! If you have insights, snippets, or suggestions for improvements, feel free to submit pull requests or open issues for discussion.
 
