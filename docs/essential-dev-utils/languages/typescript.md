@@ -76,7 +76,7 @@ process.on('SIGUSR2', () => {
 These handlers allow you to log, manage, and respond to errors, improving the reliability of your Node.js application.
 
 ## Mocking and Testing with Jest in TypeScript
-### **0. Base Code**
+### **1. Base Code**
 
 ```typescript
 // src/libs/auth.ts
@@ -84,51 +84,7 @@ export const validateToken = (token: string): Promise<string> => {
   ...
 };
 ```
-
----
-
-### **1. Import and Mock the Module**
-
-```typescript
-jest.mock("../../../../src/libs/auth");
-import { validateToken } from "../../../../src/libs/auth";
-```
-
----
-
-### **2. Configure the Mock**
-
-Use a type assertion to specify that `validateToken` is a mock:
-
-```typescript
-const mockValidateToken = validateToken as jest.Mock;
-```
-
----
-
-### **3. Define the Mock Behavior**
-
-Example: Return a specific value in a test case.
-
-```typescript
-mockValidateToken.mockReturnValueOnce(Promise.resolve(userExample()));
-```
-
----
-
-### **4. Reset Mocks After Each Test**
-
-Ensure a clean state between tests:
-
-```typescript
-afterEach(() => {
-  mockValidateToken.mockClear();
-});
-```
-
----
-
-### **5. Minimal Test Example**
+### **2. Minimal Test Example**
 
 Complete example of a test:
 
