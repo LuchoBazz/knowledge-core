@@ -122,7 +122,7 @@ Ensure a clean state between tests:
 
 ```typescript
 afterEach(() => {
-  jest.resetAllMocks();
+  mockValidateToken.mockClear();
 });
 ```
 
@@ -144,7 +144,7 @@ describe("validateToken", () => {
   });
 
   afterEach(() => {
-    jest.resetAllMocks();
+    mockValidateToken.mockClear();
   });
 
   it("should return mocked user data", async () => {
