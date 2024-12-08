@@ -94,7 +94,7 @@ import { validateToken } from "../../../../src/libs/auth";
 
 const mockValidateToken = validateToken as jest.Mock;
 
-describe("validateToken", () => {
+describe("given a validateToken function", () => {
   beforeEach(() => {
     mockValidateToken.mockReturnValueOnce(Promise.resolve(userExample()));
   });
