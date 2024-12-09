@@ -31,29 +31,19 @@ This query retrieves log entries containing the term 'uncaughtException'. Hereâ€
 
 - `limit 10000`: Limits the number of returned entries to 10,000.
 
-## Query for Unhandled Rejections
+## Filter Log Messages and Count Matches
 
 ```sql
-fields @timestamp, @message, @logStream, @log
-| filter @message like 'unhandledRejection'
-| sort @timestamp desc
-| limit 10000
+fields @timestamp, @message
+| filter @message like 'SOME_ERROR'
+| stats count() as total_matches
 ```
 
 ### Explanation
-This query retrieves log entries containing the term 'unhandledRejection'. The breakdown is similar to the previous query:
-- `fields @timestamp, @message, @logStream, @log`: Specifies the fields to be displayed in the results.
-  - `@timestamp`: The time when the log entry was created.
-  - `@message`: The content of the log entry.
-  - `@logStream`: The stream from which the log entry originates.
-  - `@log`: The log group associated with the entry.
-
-- `filter @message like 'unhandledRejection'`: Filters the log entries to include only those that contain the specified term.
-
-- `sort @timestamp desc`: Sorts the results by timestamp in descending order.
-
-- `limit 10000`: Limits the number of returned entries to 10,000.
-
+This command filters log messages to identify occurrences of a specific error and counts the total matches. Below is a breakdown of the command:
+- `fields @timestamp, @message`: Specifies the fields to include in the output, in this case, the timestamp and message.
+- `filter @message like 'SOME_ERROR'`: Filters log messages that contain the string "SOME_ERROR".
+- `stats count() as total_matches`: Aggregates the filtered results and provides the count of occurrences, labeling the output as `total_matches`.
 
 ## Count Messages and Calculate Size
 
