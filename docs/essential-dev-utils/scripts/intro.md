@@ -4,4 +4,4 @@ title: Intro
 sidebar_label: Intro
 ---
 
-You can find it at: [ScriptHub](https://github.com/LuchoBazz/script-hub) is my collection of useful scripts designed to streamline development, automate tasks, and improve efficiency.
+You can access it at: [ScriptHub](https://github.com/LuchoBazz/script-hub), which is a curated collection of valuable scripts aimed at streamlining development processes, automating tasks, and enhancing overall efficiency.
