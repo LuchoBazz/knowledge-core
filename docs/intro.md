@@ -25,7 +25,9 @@ This repository is a personal collection of knowledge and may contain inaccuraci
 ## Related repositories
 
 - [cpp-algorithm-snippets](https://luchobazz.github.io/cpp-algorithm-snippets/docs/intro)
-   Repository with useful snippets for competitive programming
+   Repository with useful snippets for competitive programming (In Progress)
+- [personal-toolkit](https://luchobazz.github.io/personal-toolkit/docs/intro)
+  A collection of personal apps and tools I use daily to improve productivity and streamline tasks (In Progress)
 
 ## Contributions
 Contributions from fellow developers are highly encouraged! If you have insights, snippets, or suggestions for improvements, feel free to submit pull requests or open issues for discussion.
