@@ -47,5 +47,18 @@ I will provide you with a [TEXT] in [SOURCE_LANGUAGE]. Please translate it into 
 [TEXT] = TEXT_HERE
 ```
 
+```text title="prompt"
+I will give you an English sentence.
+For each word in the sentence, please do the following:
+Tell me the part of speech (e.g. noun, verb, adjective, etc.).
+Give me the Spanish translation.
+If the word has secondary meanings, include them briefly.
+Explain the function of the word in the sentence (e.g. subject, main verb, object, etc.).
+If the word is part of an idiomatic expression or a common phrasal verb, explain the whole phrase and its meaning in Spanish.
+Please keep your explanations clear and simple, suitable for an English learner.
+The sentence to analyse is:
+
+[TEXT]
+```
 
 ---
