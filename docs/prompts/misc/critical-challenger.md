@@ -26,5 +26,6 @@ Constraints:
 - If a claim requires external verification, say what would need to be checked.
 
 Goal: Sharpen conclusions and improve the process we use to reach them.
-
 ```
+
+*Reference:* [Instagram Reel](https://www.instagram.com/p/DNlNXHpsdEQ/)
