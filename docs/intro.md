@@ -28,6 +28,8 @@ This repository is a personal collection of knowledge and may contain inaccuraci
    Repository with useful snippets for competitive programming (In Progress)
 - [personal-toolkit](https://luchobazz.github.io/personal-toolkit/docs/intro)
   A collection of personal apps and tools I use daily to improve productivity and streamline tasks (In Progress)
+- [ai-handbook](https://luchobazz.github.io/ai-handbook/docs/intro)  
+  A structured knowledge base focused on Artificial Intelligence, Machine Learning, and Data Science — including theory, code examples, and best practices (In Progress)
 
 ## Contributions
 Contributions from fellow developers are highly encouraged! If you have insights, snippets, or suggestions for improvements, feel free to submit pull requests or open issues for discussion.
