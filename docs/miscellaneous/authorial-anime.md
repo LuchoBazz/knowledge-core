@@ -16,24 +16,24 @@ sidebar_label: Authorial Anime
 
 **Prototypical Style: Studio Ghibli Style**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Studio Ghibli Style" width="300" />
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Studio Ghibli Style" width="300"/>
 
 **Direct Influence: Studio Ponoc Style**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Studio Ponoc Style" width="300" />
+<img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2018/09/13/3171272.jpg" alt="Studio Ponoc Style" width="300"/>
 
 **Whimsical/Fantasy: Mamoru Hosoda Style**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Mamoru Hosoda Style" width="300" />
+<img src="https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/08/np_file_179553.jpeg" alt="Mamoru Hosoda Style" width="300"/>
 
 **Visual Detail: Makoto Shinkai Style**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Shinkai Style" width="300" />
+<img src="https://i.guim.co.uk/img/media/438d27caf20e1f011711347cffb1b7b7650d45e2/56_0_1800_1080/master/1800.jpg?width=465&dpr=1&s=none&crop=none" alt="Shinkai Style" width="300"/>
 
 **Traditional Anime: '90s Anime Aesthetic**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="90s Anime Aesthetic" width="300" />
+<img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/90s-anime-feature-image.jpg" alt="90s Anime Aesthetic" width="300"/>
 
 **Nature/Scenery: Atmospheric Anime Landscape**
 
-<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Atmospheric Anime Landscape" width="300" />
+<img src="https://preview.redd.it/i-love-how-the-anime-art-style-captures-the-atmosphere-feel-v0-q5z09suiiv9f1.jpg?width=640&crop=smart&auto=webp&s=09a72fdb28c034393f8d658fb5d233255d44580e" alt="Atmospheric Anime Landscape" width="300"/>
