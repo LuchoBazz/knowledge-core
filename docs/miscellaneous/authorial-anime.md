@@ -13,3 +13,27 @@ sidebar_label: Authorial Anime
 | **Traditional Anime** | **'90s Anime Aesthetic** | Simpler character designs, often hand-drawn quality, focus on natural color palettes, and less digital polish. | Kyoto Animation (*The Melancholy of Haruhi Suzumiya*) |
 | **Nature/Scenery** | **Atmospheric Anime Landscape** | Emphasis on lush forests, serene waters, and detailed architectural structures, often with a soft, diffused light. | Various (*Mushishi*, *A Letter to Momo*) |
 
+
+**Prototypical Style: Studio Ghibli Style**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Studio Ghibli Style" width="300">
+
+**Direct Influence: Studio Ponoc Style**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Studio Ponoc Style" width="300">
+
+**Whimsical/Fantasy: Mamoru Hosoda Style**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Mamoru Hosoda Style" width="300">
+
+**Visual Detail: Makoto Shinkai Style**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Shinkai Style" width="300">
+
+**Traditional Anime: '90s Anime Aesthetic**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="90s Anime Aesthetic" width="300">
+
+**Nature/Scenery: Atmospheric Anime Landscape**
+
+<img src="https://dxbapps.com/blogimages/ghibli-style-ai-generator-features-high-similarity.jpg" alt="Atmospheric Anime Landscape" width="300">
