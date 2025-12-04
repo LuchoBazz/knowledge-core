@@ -83,6 +83,12 @@ const config: Config = {
       },
       items: [
         {
+          position: 'left',
+          label: 'Home',
+          to: 'https://luchobazz.github.io/about-me/',
+          target: '_self',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
