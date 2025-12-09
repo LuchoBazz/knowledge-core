@@ -94,6 +94,12 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        {
+          position: 'left',
+          label: 'Prompts',
+          to: '/knowledge-core/prompts',
+          target: '_self',
+        },
         // { to: '/docs/prompts/intro', label: 'Prompts', position: 'left' },
         // { to: '/docs/essential-dev-utils/intro', label: 'Essential Dev Utils', position: 'left' },
         {

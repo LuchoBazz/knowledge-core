@@ -260,6 +260,23 @@ export default function PromptVerse() {
               >
                 <Menu size={20} />
               </button>
+
+              {/* Navigation Links */}
+              <div className="hidden md:flex items-center gap-1">
+                <a
+                  href="https://luchobazz.github.io/about-me/"
+                  className="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all"
+                >
+                  Home
+                </a>
+                <a
+                  href="/knowledge-core/docs/intro"
+                  className="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all"
+                >
+                  Docs
+                </a>
+              </div>
+
               <div className="relative w-full max-w-md group">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 dark:group-focus-within:text-indigo-400 transition-colors" size={18} />
                 <input
@@ -271,13 +288,13 @@ export default function PromptVerse() {
                 />
               </div>
             </div>
-            <button
+            {/* <button
               onClick={() => setIsModalOpen(true)}
               className="hidden md:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-all shadow-lg shadow-indigo-600/20 hover:scale-105 active:scale-95"
             >
               <Plus size={18} />
               New Prompt
-            </button>
+            </button> */}
             <button
               onClick={() => setIsModalOpen(true)}
               className="md:hidden flex items-center justify-center w-8 h-8 bg-indigo-600 text-white rounded-full"
