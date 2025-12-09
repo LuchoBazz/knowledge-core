@@ -536,7 +536,6 @@ export default function PromptVerse() {
               <button
                 onClick={() => {
                   copyToClipboard(viewingPrompt.content);
-                  setViewingPrompt(null);
                 }}
                 className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2 rounded-lg font-medium shadow-lg shadow-indigo-500/20 transition-all transform active:scale-95"
               >
