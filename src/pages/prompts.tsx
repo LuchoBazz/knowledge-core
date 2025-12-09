@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   Copy,
   Plus,
-  Trash2,
   Search,
   Code,
   PenTool,
@@ -349,13 +348,13 @@ export default function PromptVerse() {
                       >
                         <Expand size={16} />
                       </button>
-                      <button
+                      {/* <button
                         onClick={() => handleDelete(prompt.id)}
                         className="p-1.5 text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-md transition-colors"
                         title="Delete"
                       >
                         <Trash2 size={16} />
-                      </button>
+                      </button> */}
                     </div>
                   </div>
 
