@@ -74,8 +74,11 @@ const CATEGORIES = [
 export default function PromptVerse() {
   // --- State Management ---
   const [prompts, setPrompts] = useState(() => {
-    const saved = localStorage.getItem('myPrompts');
-    return saved ? JSON.parse(saved) : INITIAL_PROMPTS;
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('myPrompts');
+      return saved ? JSON.parse(saved) : INITIAL_PROMPTS;
+    }
+    return INITIAL_PROMPTS;
   });
 
   // Theme state: checks localStorage or defaults to dark
@@ -103,11 +106,15 @@ export default function PromptVerse() {
 
   // --- Effects ---
   useEffect(() => {
-    localStorage.setItem('myPrompts', JSON.stringify(prompts));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('myPrompts', JSON.stringify(prompts));
+    }
   }, [prompts]);
 
   useEffect(() => {
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    }
   }, [isDarkMode]);
 
   useEffect(() => {
@@ -193,7 +200,7 @@ export default function PromptVerse() {
                 <MessageSquare size={18} className="text-white" />
               </div>
               <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-500 dark:from-white dark:to-slate-400">
-                PromptVerse
+                My Prompts
               </h1>
             </div>
 
