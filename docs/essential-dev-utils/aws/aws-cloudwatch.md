@@ -61,3 +61,19 @@ This query counts the total number of messages and calculates their size, groupe
 - `sum(strlen(@message))/1024/1024 as size`: Calculates the total size of messages in megabytes by summing the length of each message and converting the result from bytes to megabytes.
 - `by label, level, message`: Groups the results based on the specified fields: `label`, `level`, and `message`.
 - `sort by size desc`: Orders the output by message size in descending order, allowing for easy identification of the largest messages.
+
+## Group Errors by Stacktrace
+
+```sql
+filter @message like "error"
+| stats count(*) as total by stacktrace
+| sort total desc
+````
+
+### Explanation
+
+This query identifies the most frequent errors by filtering messages containing the term "error" and grouping them by their stacktrace. Here’s a breakdown of the command:
+
+  - `filter @message like "error"`: Filters the log entries to include only those that contain the string "error".
+  - `stats count(*) as total by stacktrace`: Aggregates the filtered results by counting the occurrences of each unique stacktrace and labeling the count as `total`.
+  - `sort total desc`: Sorts the results by the total count in descending order, making it easy to spot the most recurring exceptions.

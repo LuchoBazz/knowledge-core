@@ -58,6 +58,76 @@ git reset
 This command un-stages all files that were added to the staging area using git add. Here’s a breakdown of the command: 
 - `git reset`: Resets the staging area to match the last commit, effectively removing all files from the staging area while keeping the changes in the working directory. This allows you to modify the files further before staging them again or committing them.
 
+# Git Diff Commands
+
+This document provides useful commands for Git to compare differences between branches, file names, and remote references.
+
+## Compare Two Branches
+
+```bash
+git diff branch1..branch2
+````
+
+### Explanation
+
+This command shows the full content differences (diffs) between two specific branches. Here’s a breakdown of the command:
+
+  - `git diff`: The primary command used to show changes between commits, commit and working tree, etc.
+  - `branch1..branch2`: Specifies the two tips to compare. It shows what you would see if you were looking at `branch2` and comparing it back to `branch1`.
+
+## List Changed Files Only
+
+```bash
+git diff --name-only branch1..branch2
+```
+
+### Explanation
+
+This query suppresses the code diffs and lists only the names of the files that have changed. Below is a breakdown of the command:
+
+  - `--name-only`: An option that instructs Git to show only the names of changed files, omitting the contextual diff (the actual lines of code).
+  - `branch1..branch2`: The source and target branches for the comparison.
+
+## Show Change Statistics
+
+```bash
+git diff --stat branch1..branch2
+```
+
+### Explanation
+
+This command provides a summary of changes, showing which files changed and how many lines were added or removed. The following components detail the functionality:
+
+  - `--stat`: Generates a diffstat. It displays a histogram of insertions and deletions for each file, giving a quick overview of the magnitude of changes.
+  - `branch1..branch2`: The range of branches being compared.
+
+## Compare Remote Branches
+
+```bash
+git diff origin/main..origin/feature/payment-retry
+```
+
+### Explanation
+
+This command compares the state of branches as they exist on the remote repository (e.g., GitHub or GitLab) without needing to check them out locally.
+
+  - `origin/main`: References the `main` branch on the remote named `origin`.
+  - `origin/feature/payment-retry`: References a specific feature branch on the remote.
+  - This is useful for code reviews or verifying what will change before merging a remote branch.
+
+## Disable Pager for Output
+
+```bash
+git --no-pager diff branch1..branch2
+```
+
+### Explanation
+
+This command outputs the diff directly to the terminal (stdout) without opening a pagination tool (like `less` or `vi`).
+
+  - `git --no-pager`: A global option that tells Git not to pipe the output into a pager. This is useful for scripts or when you want to scroll through the output in your terminal history.
+  - `diff branch1..branch2`: The standard comparison command executed after the pager is disabled.
+
 ## Amending the Last Git Commit Message
 
 ```bash
@@ -70,3 +140,4 @@ This command modifies the most recent commit in your Git repository by changing 
 - `-m "some comment"`: This flag specifies the new commit message. Replace `"some comment"` with your desired message to reflect the changes made.
 
 Using this command is particularly useful for correcting typos or adding additional information to the commit message without creating a new commit.
+
