@@ -77,6 +77,27 @@ This query retrieves a list of currently running processes in the database, excl
 
 This is an essential command for troubleshooting performance issues, identifying stuck queries, or monitoring real-time database load.
 
+## Retrieve Enum Values
+
+```sql
+-- get the values of an enum
+SELECT *
+FROM pg_enum
+WHERE enumtypid = 'enum_order_products_status'::regtype
+ORDER BY enumsortorder;
+
+```
+
+### Explanation
+
+This query retrieves the list of valid labels defined for a specific ENUM type, preserving their defined order.
+
+* `FROM pg_enum`: Queries the system catalog that stores specific information about enum types and their labels.
+* `'enum_order_products_status'::regtype`: Dynamically looks up the internal Object ID (OID) for the enum named `enum_order_products_status`. This is safer and easier than manually finding the numeric ID.
+* `ORDER BY enumsortorder`: Ensures the results are returned in the logical order defined in the enum (e.g., `PENDING`, `PROCESSING`, `COMPLETED`), rather than alphabetical order.
+
+Use this when you need to programmatically verify the allowed values for a specific status column or debug schema inconsistencies.
+
 ---
 
 ## Retrieve Rows Containing a Specific Tag (Method 1)
