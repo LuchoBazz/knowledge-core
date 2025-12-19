@@ -22,6 +22,63 @@ This query is useful for analyzing and optimizing autovacuum behavior in a Postg
 
 ---
 
+## Check Index Status and Safe Drop
+
+```sql
+SELECT indexrelid::regclass AS index_name,
+       indisvalid,
+       indisready,
+       indislive
+FROM pg_index
+WHERE indexrelid::regclass::text = 'new_cart_id_idx';
+
+DROP INDEX CONCURRENTLY IF EXISTS new_cart_id_idx;
+
+SET statement_timeout = '300s';
+
+SHOW statement_timeout;
+
+```
+
+### Explanation
+
+This sequence of commands is used to verify the status of an index, remove it without locking the table, and configure session timeouts.
+
+* `SELECT ... FROM pg_index`: Checks the health of the index `new_cart_id_idx`.
+* `indisvalid`: Returns true if the index is valid for queries. If false, the index creation likely failed.
+* `indisready`: Shows if the index is ready for inserts/updates.
+
+
+* `DROP INDEX CONCURRENTLY`: Removes the index without locking the table against writes. This is the recommended way to drop indexes in production environments.
+* `SET statement_timeout = '300s'`: Sets a safety limit for the current session, ensuring that subsequent queries are aborted if they take longer than 300 seconds (5 minutes).
+* `SHOW statement_timeout`: Verifies that the timeout configuration has been applied correctly.
+
+Use this workflow when managing indexes on live databases to avoid downtime or performance degradation.
+
+---
+
+## Monitor Active Database Activity
+
+```sql
+SELECT pid, usename, state, query 
+FROM pg_stat_activity 
+WHERE state != 'idle';
+
+```
+
+### Explanation
+
+This query retrieves a list of currently running processes in the database, excluding idle connections.
+
+* `FROM pg_stat_activity`: Queries the system view that shows information related to server processes.
+* `state != 'idle'`: Filters out connections that are currently doing nothing, focusing only on active, running, or blocked queries.
+* `pid`: The process ID, useful if you need to terminate a specific query using `pg_terminate_backend(pid)`.
+* `query`: Displays the actual SQL text being executed.
+
+This is an essential command for troubleshooting performance issues, identifying stuck queries, or monitoring real-time database load.
+
+---
+
 ## Retrieve Rows Containing a Specific Tag (Method 1)
 
 ```sql
