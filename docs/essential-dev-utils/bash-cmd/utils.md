@@ -34,3 +34,19 @@ This command runs a task in a Node.js environment: processing user imports. It t
 - `audit_import_users_$(date +'%Y%m%d%H%M%S').txt`: Creates a log file named with a timestamp (in the format `YYYYMMDDHHMMSS`), storing the output for later review or auditing. The `date` command dynamically generates the timestamp to ensure each audit file has a unique name.
 
 This approach ensures that user imports are tracked and verifiable, which is critical for auditing and troubleshooting in production environments.
+
+## Recursive Text Search
+
+```bash
+grep -r "nanoid" . --exclude-dir=node_modules --exclude=package-lock.json
+```
+
+### Explanation
+
+This command searches for a specific string (in this case, "nanoid") recursively throughout the current directory, while explicitly ignoring specific directories and files to avoid unnecessary noise. Below is a breakdown of the command:
+
+* `grep -r "nanoid" .`: Uses the `grep` tool to search recursively (`-r`) for the text "nanoid" starting from the current directory (`.`).
+* `--exclude-dir=node_modules`: Excludes the `node_modules` folder from the search, which is crucial for performance as it prevents scanning thousands of library files.
+* `--exclude=package-lock.json`: Excludes the `package-lock.json` file, ensuring that the results focus on your actual source code usage rather than dependency definitions.
+
+This is extremely useful when refactoring or checking where a specific library or variable is referenced in your codebase, ensuring clean results by ignoring generated or dependency-heavy files.
