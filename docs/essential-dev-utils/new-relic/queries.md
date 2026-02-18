@@ -11,7 +11,7 @@ This document contains a useful query for New Relic to count transactions within
 ## Query for Transaction Count
 
 ```sql
-SELECT count(*) FROM Transaction WHERE appName IN ('service-production') AND name LIKE '%queryName%' SINCE '2024-08-31T20:00 [America/Bogota]' UNTIL '2024-08-31T20:15  [America/Bogota]' FACET request.headers.origin
+SELECT count(*) FROM Transaction WHERE appName IN ('service-production') AND name LIKE '%queryName%' SINCE '2026-08-31T20:00 [America/Bogota]' UNTIL '2026-08-31T20:15  [America/Bogota]' FACET request.headers.origin
 ```
 
 ### Explanation
@@ -24,9 +24,9 @@ This query counts the number of transactions for a specific application within a
 
 - `AND name LIKE '%queryName%'`: Further filters the transactions to include only those whose names match the specified pattern (`queryName`).
 
-- `SINCE '2024-08-31T20:00 [America/Bogota]'`: Defines the start time for the query.
+- `SINCE '2026-08-31T20:00 [America/Bogota]'`: Defines the start time for the query.
 
-- `UNTIL '2024-08-31T20:15  [America/Bogota]'`: Defines the end time for the query.
+- `UNTIL '2026-08-31T20:15  [America/Bogota]'`: Defines the end time for the query.
 
 - `FACET request.headers.origin`: Groups the results by the `origin` header of the requests, allowing for insights into where the requests originated.
 
