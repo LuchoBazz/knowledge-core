@@ -104,15 +104,15 @@ This command provides a summary of changes, showing which files changed and how 
 ## Compare Remote Branches
 
 ```bash
-git diff origin/main..origin/feature/payment-retry
+git diff origin/development..origin/feature
 ```
 
 ### Explanation
 
 This command compares the state of branches as they exist on the remote repository (e.g., GitHub or GitLab) without needing to check them out locally.
 
-  - `origin/main`: References the `main` branch on the remote named `origin`.
-  - `origin/feature/payment-retry`: References a specific feature branch on the remote.
+  - `origin/development`: References the `development` branch on the remote named `origin`.
+  - `origin/feature`: References a specific feature branch on the remote.
   - This is useful for code reviews or verifying what will change before merging a remote branch.
 
 ## Disable Pager for Output
