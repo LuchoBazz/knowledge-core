@@ -1,3 +1,81 @@
+# How to Use the Cartoon Illustration Prompt
+
+This prompt is designed to generate a **full-body cartoon illustration** of a real person, based on reference photos you provide. Here's how to use it effectively.
+
+---
+
+## What You'll Need
+
+- **2–5 clear reference photos** of the person you want to cartoonize
+- A **cartoon style reference image** (the prompt calls it `cartoon_reference.png`) — this is a sample image that shows the art style you want the AI to replicate
+- Access to an AI image generator that accepts image inputs (like GPT-4o, Gemini, or a similar multimodal model)
+
+---
+
+## Step-by-Step Guide
+
+### Step 1 — Prepare Your Reference Photos
+Gather multiple photos of the person. For best results:
+- Include at least **one full-body photo** so the AI can read the person's build and proportions
+- Add a **front-facing photo** for facial features
+- Include photos showing their **typical clothing**
+
+### Step 2 — Prepare Your Style Reference
+Find or create a sample cartoon image (`cartoon_reference.png`) that represents the exact art style you want — clean black outlines, cell-shaded colors, vibrant solid tones (think classic comic book or animated series style).
+
+### Step 3 — Fill In the Placeholder
+In the prompt, locate this part:
+
+```
+[REFERENCE_PHOTOS]
+```
+
+You can either:
+- **Leave it as-is** if your tool automatically links uploaded images as inputs
+- **Replace it** with a short note, for example: `[REFERENCE_PHOTOS of John Smith, full-body and face shots]`
+
+### Step 4 — Upload Everything and Run the Prompt
+In your AI tool of choice:
+1. Upload all your reference photos
+2. Upload your `cartoon_reference.png` style image
+3. Paste the full prompt into the message/instructions field
+4. Submit
+
+### Step 5 — Review the Output
+Check that the result:
+- ✅ Matches the person's body type and proportions
+- ✅ Uses the correct art style (clean lines, cel-shading)
+- ✅ Shows a full-body, forward-facing pose
+- ✅ Has a transparent or grid background
+- ✅ Has no extra text, logos, or other characters
+
+---
+
+## Tips for Better Results
+
+| Tip | Why It Helps |
+|---|---|
+| Use well-lit, high-resolution photos | The AI reads physical details more accurately |
+| Include photos from different angles | Helps the AI build a fuller model of the person |
+| Use a strong style reference image | The more specific the reference, the more consistent the style |
+| Be explicit about body type in the placeholder | Adds a safety net if photos are ambiguous |
+
+---
+
+## What the Prompt Does Automatically
+
+You don't need to specify these — they're already baked into the prompt:
+
+- Full-body, front-facing pose
+- Transparent/grid background
+- No text or logos in the output
+- Clothing folds and stylized textures
+- Faithful replication of the person's build (stocky, thin, athletic, etc.)
+
+--
+
+## Prompt
+
 ```text title="prompt"
 Generate a full-body, standalone cartoon illustration of a single person, based on the specific reference photos provided [REFERENCE_PHOTOS].
 
