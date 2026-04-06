@@ -7,11 +7,11 @@ try {
   const passwordPath = path.join(process.cwd(), "password.txt");
 
   if (!fs.existsSync(textPath) || !fs.existsSync(passwordPath)) {
-    console.error("Error: Asegúrate de crear los archivos 'text.txt' y 'password.txt' en la raíz del proyecto.");
+    console.error("Error: Make sure to create 'text.txt' and 'password.txt' files in the project root.");
     process.exit(1);
   }
 
-  // Se usa trim() en el password para evitar saltos de línea ocultos
+  // trim() is used on the password to avoid hidden line breaks
   const plaintext = fs.readFileSync(textPath, "utf8");
   const password = fs.readFileSync(passwordPath, "utf8").trim();
 
@@ -19,6 +19,6 @@ try {
 
   console.log("Ciphertext:\n" + ciphertext);
 } catch (error) {
-  console.error("Error ejecutando la encriptación:", error.message);
+  console.error("Error executing encryption:", error.message);
   process.exit(1);
 }

@@ -22,3 +22,4 @@ yarn-error.log*
 # Encryption secrets
 text.txt
 password.txt
+ciphertext.txt
