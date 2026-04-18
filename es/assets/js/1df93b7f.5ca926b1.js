@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkknowledge_core=globalThis.webpackChunkknowledge_core||[]).push([[4583],{6866:(e,o,n)=>{n.r(o),n.d(o,{default:()=>t});var c=n(6540),r=n(6347),s=n(4848);function t(){const e=(0,r.W6)();return(0,c.useEffect)((()=>{e.push("/knowledge-core/docs/intro")}),[e]),(0,s.jsx)(s.Fragment,{})}}}]);
