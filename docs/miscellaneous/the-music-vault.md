@@ -4,6 +4,8 @@ title: The Music Vault
 sidebar_label: The Music Vault
 ---
 
+## Euro Dance
+
 ### 1980s
 * **1989** | 🇧🇪 Belgium | **Technotronic** – [*Pump Up The Jam*](https://www.youtube.com/watch?v=9EcjWd-O4jI) | **Genre:** Hip House / Eurodance / Techno
 
@@ -19,3 +21,8 @@ sidebar_label: The Music Vault
 * **2003** | 🇲🇩 Moldova | **O-Zone** – [*Dragostea Din Tei*](https://www.youtube.com/watch?v=YnopHnh1hJQ) | **Genre:** Eurodance / Europop
 * **2005** | 🇸🇪 Sweden | **Crazy Frog** – [*Axel F*](https://www.youtube.com/watch?v=k85mRPqvMbE) | **Genre:** Novelty / Eurodance / Synth-pop
 * **2009** | 🇷🇴 Romania | **Edward Maya & Vika Jigulina** – [*Stereo Love*](https://www.youtube.com/watch?v=p-Z3YrHJ1sU) | **Genre:** House / Dance-Pop
+
+## Reggaeton & Urban
+
+### 2020s
+* **2024** | 🇨🇴 Colombia | **Beéle, Westcol, Ovy On The Drums** – [*LA PLENA (W Sound 05)*](https://www.youtube.com/watch?v=H1pnb-P68I0) | **Genre:** Reggaeton / Afrobeats / Latin Pop
