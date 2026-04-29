@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+title: Cartoon Generator
+sidebar_label: Cartoon Generator
+---
+
 # How to Use the Cartoon Illustration Prompt
 
 This prompt is designed to generate a **full-body cartoon illustration** of a real person, based on reference photos you provide. Here's how to use it effectively.
