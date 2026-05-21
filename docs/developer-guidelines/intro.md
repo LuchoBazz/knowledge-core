@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+sidebar_label: Intro
+---
+
 ## Developer Guidelines: Core Engineering Standards
 
 Welcome to our Developer Guidelines. This document outlines the foundational technical standards and best practices defined by our engineering leadership. Adhering to these guidelines ensures consistency, security, and scalability across all our systems.
@@ -7,6 +12,7 @@ Below is a concise overview of our core technical policies:
 * **Phone Number Format:** Mandatory storage using the international E.164 standard (e.g., `+1234567890`), saved as a String without spaces, hyphens, or special characters to ensure compatibility with SMS and telephony providers.
 * **Allowed Encryption Algorithms:** Exclusive use of high-security industry standards, such as AES-256 for data at rest and TLS 1.2 or higher for data in transit.
 * **Disallowed Encryption Algorithms:** Strict prohibition of obsolete, insecure, or vulnerable algorithms such as MD5, SHA-1, DES, or 3DES for any authentication, hashing, or data protection processes.
+* **Cross-Origin Resource Sharing (CORS):** Strict prohibition of wildcard origins (`*`) in production environments. Allowed origins must be explicitly whitelisted, and the `Access-Control-Allow-Credentials` header must only be set to `true` when combined with specific, trusted origins.
 * **Date and Time Management:** Mandatory storage in the UTC timezone and communication using the ISO 8601 standard.
 * **API Design and Versioning:** Rules for URL structuring, pagination handling, and mandatory endpoint versioning (e.g., `/v1/users`).
 * **Secrets Management:** Strict prohibition of hardcoded credentials in the source code and mandatory use of vault managers (e.g., AWS Secrets Manager, HashiCorp Vault).
