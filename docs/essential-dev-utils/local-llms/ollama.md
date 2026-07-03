@@ -48,6 +48,12 @@ Replace `qwen3:14b` with the name of the model you want to stop.
 ollama launch opencode
 ```
 
+* **Launch Claude** (Anthropic's coding agent) using a locally running model:
+
+```bash
+ollama launch claude
+```
+
 ## Models
 
 * `qwen3:14b` — general-purpose reasoning model, solid at coding. `#coding` `#general`
