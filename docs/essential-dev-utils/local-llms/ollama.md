@@ -41,3 +41,13 @@ ollama stop qwen3:14b
 ```
 
 Replace `qwen3:14b` with the name of the model you want to stop.
+
+* **Launch OpenCode** (a terminal-based coding agent) using a locally running model:
+
+```bash
+ollama launch opencode
+```
+
+## Models
+
+* `qwen3:14b` — general-purpose reasoning model, solid at coding. `#coding` `#general`
