@@ -1,1 +1,0 @@
-(globalThis.webpackChunkknowledge_core=globalThis.webpackChunkknowledge_core||[]).push([[5741],{5741:()=>{}}]);
