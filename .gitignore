@@ -18,8 +18,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+bun-error.log
 
 # Encryption secrets
 text.txt
 password.txt
 ciphertext.txt
+
+# Local Files
+*.local.*
