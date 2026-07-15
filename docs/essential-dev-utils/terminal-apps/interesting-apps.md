@@ -14,7 +14,7 @@ A minimal terminal countdown timer.
 
 ```bash
 # Homebrew
-brew install antonmedv/tap/countdown
+brew install countdown
 
 # Go
 go install github.com/antonmedv/countdown@latest
