@@ -65,7 +65,7 @@ This document provides useful commands for Git to compare differences between br
 ## Compare Two Branches
 
 ```bash
-git diff branch1..branch2
+git --no-pager diff branch1..branch2
 ````
 
 ### Explanation
@@ -78,7 +78,7 @@ This command shows the full content differences (diffs) between two specific bra
 ## List Changed Files Only
 
 ```bash
-git diff --name-only branch1..branch2
+git --no-pager diff --name-only branch1..branch2
 ```
 
 ### Explanation
@@ -91,7 +91,7 @@ This query suppresses the code diffs and lists only the names of the files that 
 ## Show Change Statistics
 
 ```bash
-git diff --stat branch1..branch2
+git --no-pager diff --stat branch1..branch2
 ```
 
 ### Explanation
@@ -104,7 +104,7 @@ This command provides a summary of changes, showing which files changed and how 
 ## Compare Remote Branches
 
 ```bash
-git diff origin/development..origin/feature
+git --no-pager diff origin/development..origin/feature
 ```
 
 ### Explanation
