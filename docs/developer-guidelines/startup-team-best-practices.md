@@ -84,3 +84,13 @@ Simple template:
 - Rollout steps: <order to enable each flag>
 - Rollback: <how to turn it off>
 ```
+
+### 9. Quantify user impact before rushing a critical fix
+
+When an urgent support escalation lands and an immediate fix is not feasible, pull the metrics first.
+
+* Query your logs, metrics, or database to determine exactly how many users or workflows are actually affected.
+* What feels critical to a single vocal customer often turns out to have a very low blast radius across the broader platform.
+* Concrete numbers eliminate urgency theater and knee-jerk patching, giving the engineering team composure to build the right solution.
+* Share the verified impact data with Support and stakeholders to set realistic expectations and handle the situation calmly.
+
