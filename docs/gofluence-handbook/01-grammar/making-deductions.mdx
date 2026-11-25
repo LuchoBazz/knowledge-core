@@ -1,0 +1,191 @@
+---
+title: Making deductions
+description: Use clues to work out what is probably true or what the problem is, with must, might, could and can't.
+sidebar_label: Making deductions
+sidebar_position: 9
+keywords: [making deductions, must be, can't be, might, could have, it seems that, troubleshooting, English grammar, B1, B2]
+tags: [grammar, modals, technology, workplace]
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import VocabTable from '@site/docs/gofluence-handbook/_components/VocabTable';
+import Dialogue from '@site/docs/gofluence-handbook/_components/Dialogue';
+import Quiz from '@site/docs/gofluence-handbook/_components/Quiz';
+
+# Making deductions
+
+## 1. Learning objective
+
+Use clues to explain a problem or a situation, with phrases like **It seems that...** and modals like **must be, might be, could have, can't be**.
+
+## 2. Key concepts
+
+A deduction is a conclusion from **evidence**. You do not know the answer for sure, but the clues point to it.
+
+### Determine the problem
+
+Use these phrases to say what you think the problem is:
+
+- It seems that the server is out of memory.
+- It's very likely that the database is slow.
+- If you're seeing an error, and the logs are empty, it could mean that the service did not start.
+- If the cable is connected, then the problem is the network card.
+
+### Use modal verbs
+
+Use a modal followed by the **infinitive without `to`**.
+
+| Modal | Certainty | Example |
+|-------|-----------|---------|
+| must be | very sure it is true | It must be a permissions problem. |
+| might / may be | possible | It might be a bug in the new version. |
+| could be / could have | possible (present or past) | It could have failed during the deploy. |
+| can / can't be | can: possible; can't: very sure it is not true | It can't be the network. Other users are online. |
+
+:::tip Present and past
+- Present: `must / might / could / can't` + **base verb** (It must be a typo.)
+- Past: `must / might / could / can't` + **have + past participle** (It must have been a typo.)
+:::
+
+:::note Must for deduction
+Here `must` does not mean obligation. It means "I am almost sure". The opposite is `can't`, not `mustn't`.
+:::
+
+:::warning Do not use `mustn't` for deductions
+- ❌ The file mustn't be on the server.
+- ✅ The file **can't** be on the server.
+:::
+
+## 3. Vocabulary & useful phrases
+
+<VocabTable
+  rows={[
+    {en: 'It seems that...', meaning: 'Parece que...', example: 'It seems that the cache is full.'},
+    {en: "It's very likely that...", meaning: 'Es muy probable que...', example: "It's very likely that the update broke the login."},
+    {en: 'it could mean that...', meaning: 'podría significar que...', example: 'If the logs are empty, it could mean that nothing ran.'},
+    {en: 'evidence', meaning: 'evidencia, pruebas', example: 'What evidence do we have for that?'},
+    {en: 'clue', meaning: 'pista', example: 'The error message is a good clue.'},
+    {en: 'rule out', meaning: 'descartar', example: 'Let us rule out the network first.'},
+    {en: 'root cause', meaning: 'causa raíz', example: 'We still need to find the root cause.'},
+    {en: 'troubleshoot', meaning: 'diagnosticar y resolver un problema', example: 'I will troubleshoot the issue after lunch.'},
+  ]}
+/>
+
+## 4. Examples in a workplace context
+
+<Tabs>
+  <TabItem value="support" label="Support ticket" default>
+
+```text title="Internal note"
+The customer cannot log in.
+It seems that the password reset email is not arriving.
+It might be in the spam folder, or the address could be wrong.
+It can't be a server outage, because other customers are fine.
+```
+
+  </TabItem>
+  <TabItem value="deploy" label="After a deploy">
+
+```text title="Slack message"
+The page is blank since the release.
+It must be the new JavaScript bundle.
+It could have failed to load because of a cache problem.
+```
+
+  </TabItem>
+</Tabs>
+
+<Dialogue
+  title="Troubleshooting call"
+  lines={[
+    {speaker: 'Sara', text: 'The app works for me, but not for the client.'},
+    {speaker: 'Tom', text: 'It must be something in their setup. It can\'t be our code.'},
+    {speaker: 'Sara', text: 'Maybe. It could be a firewall rule.'},
+    {speaker: 'Tom', text: 'If they are on a company network, and the port is closed, then the problem is the firewall.'},
+  ]}
+/>
+
+## 5. Common mistakes
+
+| ❌ Wrong | ✅ Correct | Why |
+|---------|-----------|-----|
+| It must to be a bug. | It must be a bug. | No `to` after a modal. |
+| It mustn't be the cable. | It can't be the cable. | Use `can't` for a negative deduction. |
+| It must be failed yesterday. | It must have failed yesterday. | Past deduction: modal + `have` + past participle. |
+| It could has failed. | It could have failed. | Always `have`, never `has`. |
+| It can be the network, I am sure. | It must be the network. | `can` is only possible. For strong certainty use `must`. |
+
+:::danger Spanish speakers
+Spanish uses *debe de ser* for deduction, and *debe* also for obligation. In English they are separate: `must be` is a deduction and `have to` is an obligation. For the opposite deduction, say `can't be` (*no puede ser*), never `mustn't be`.
+:::
+
+## 6. Practice exercises
+
+### A. Fill in the blanks
+
+Use `must`, `might`, `could` or `can't` with the verb in brackets.
+
+1. The logs show an out-of-memory error. It ______ (be) a memory leak. (very sure)
+2. The office is dark and the door is locked. They ______ (be) here. (very sure it is not true)
+3. I am not sure why the build is slow. It ______ (be) the new dependency. (possible)
+4. The data is gone. Someone ______ (delete) it by mistake. (possible, past)
+
+### B. Rewrite the sentence
+
+Rewrite each sentence with the phrase in brackets.
+
+1. The API is probably down. (It seems that...)
+2. I am sure the problem is the DNS. (must)
+
+### C. Speaking prompts
+
+- Your teammate says the website is slow. Give **three deductions** about the cause.
+- Describe a problem you solved at work. Which clues helped you?
+
+### D. Quick quiz
+
+<Quiz
+  question="You are almost sure the report is not on the shared drive. Which sentence is correct?"
+  options={[
+    'The report mustn\'t be on the shared drive.',
+    'The report can\'t be on the shared drive.',
+    'The report can be on the shared drive.',
+  ]}
+  answer={1}
+  explanation="Use can't for a negative deduction. Mustn't means prohibition."
+/>
+
+## 7. Answer key
+
+<details>
+<summary>Show answers</summary>
+
+**A.**
+1. must be
+2. can't be
+3. might be (or could be)
+4. might have deleted (or could have deleted)
+
+**B.**
+1. It seems that the API is down.
+2. It must be the DNS.
+
+**C.** Answers vary. Check the modals (`must`, `might`, `could`, `can't`) and the base verb or `have + past participle`.
+
+</details>
+
+## 8. Quick recap
+
+- A deduction is a conclusion based on clues.
+- `must be` = very sure. `might / could be` = possible. `can't be` = very sure it is not true.
+- Past deductions use `have + past participle`.
+- Use `It seems that...` and `It's very likely that...` to introduce a problem.
+
+## 9. Review checklist
+
+- [ ] I can explain the difference between `must`, `might` and `can't`.
+- [ ] I use `can't`, not `mustn't`, for negative deductions.
+- [ ] I can form past deductions with `have + past participle`.
+- [ ] I can introduce a problem with `It seems that...`.
+- [ ] I can troubleshoot a problem aloud with three deductions.

@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 360px;
+  min-height: 110px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  font: inherit;
+}
+.card:hover { border-color: var(--ifm-color-primary); }
+.flipped { border-color: var(--ifm-color-primary); background: var(--ifm-color-emphasis-100); }
+.example { display: block; margin-top: 0.4rem; font-weight: normal; }
+.hint { color: var(--ifm-color-emphasis-600); }

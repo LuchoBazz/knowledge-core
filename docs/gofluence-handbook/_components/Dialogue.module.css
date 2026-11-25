@@ -1,0 +1,11 @@
+.box {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--ifm-background-surface-color);
+}
+.title { font-weight: 700; margin-bottom: 0.5rem; }
+.line { margin: 0.25rem 0; }
+.alt { padding-left: 1.25rem; color: var(--ifm-color-emphasis-800); }

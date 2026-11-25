@@ -1,0 +1,42 @@
+grammar:
+  label: Grammar
+  description: Grammar rules and structures.
+vocabulary:
+  label: Vocabulary
+  description: Word lists, collocations and phrasal verbs.
+meetings:
+  label: Meetings
+  description: Language for meetings and discussions.
+presentations:
+  label: Presentations
+  description: Presenting proposals, reports and ideas.
+projects:
+  label: Projects
+  description: Project management language.
+modals:
+  label: Modals
+  description: Modal verbs (can, could, may, might, must, should).
+conditionals:
+  label: Conditionals
+  description: Zero and first conditional.
+tenses:
+  label: Tenses
+  description: Verb tenses and their contrasts.
+feedback:
+  label: Feedback
+  description: Giving, asking for and responding to feedback.
+customer-support:
+  label: Customer support
+  description: Client and customer communication.
+technology:
+  label: Technology
+  description: Tech, apps, AI and technical assistance.
+workplace:
+  label: Workplace
+  description: Everyday office communication.
+speaking:
+  label: Speaking
+  description: Phrases for speaking practice.
+reference:
+  label: Reference
+  description: Glossary, cheat sheet and study tools.
