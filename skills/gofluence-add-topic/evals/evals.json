@@ -1,0 +1,15 @@
+{
+  "skill_name": "gofluence-add-topic",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "agrega este tema a mi handbook de GoFluence:\n\nSecond conditional\nSummary\nThe second conditional talks about unreal or unlikely situations in the present or future and their imaginary results.\nIt is formed with \"If\" + past simple, would + base verb.\nExamples:\nIf we had a bigger budget, we would hire two more developers.\nIf the client agreed to the new deadline, the team would have more time to test.\nWe often use \"were\" for all subjects: If I were you, I would talk to the manager.",
+      "expected_output": "New 01-grammar/second-conditional.mdx with sidebar_position 14, 9 numbered sections, check_topic passes, glossary regenerated, build OK."
+    },
+    {
+      "id": 2,
+      "prompt": "nuevo tema de GoFluence, pegado tal cual:\n\nPhrasal verbs for meetings\nLearn\nbring up\nto mention a topic for discussion\nCan I bring up the budget issue before we finish?\nwrap up\nto finish a meeting or a task\nLet's wrap up in five minutes.\nrun through\nto review something quickly\nLet's run through the agenda first.\nfollow up\nto take further action after a meeting\nI'll follow up with an email tonight.\nput off\nto delay something until later\nWe had to put off the demo until Friday.",
+      "expected_output": "New 02-vocabulary/phrasal-verbs-for-meetings.mdx with next sidebar_position, 9 numbered sections, VocabTable with the 5 verbs, glossary regenerated, build OK."
+    }
+  ]
+}
